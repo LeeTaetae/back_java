@@ -1,0 +1,12 @@
+package variableTest;
+
+public class VariableTest {
+	public static void main(String[] args) {
+//	초기값
+//	정수 : 0
+//	실수 : 0,0
+//	문자 : ' '
+		
+		
+	}
+}

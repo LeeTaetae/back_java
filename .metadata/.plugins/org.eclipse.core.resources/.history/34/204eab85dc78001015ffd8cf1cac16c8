@@ -1,0 +1,7 @@
+package variableTest;
+
+public class VariableTest {
+	public static void main(String[] args) {
+		String name = "홍길동";
+	}
+}

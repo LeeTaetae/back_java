@@ -1,0 +1,7 @@
+package variableTest;
+
+public class VariableTest02 {
+	public static void main(String[] args) {
+		
+	}
+}

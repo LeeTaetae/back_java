@@ -1,0 +1,9 @@
+package consoleTest;
+
+public class PrintTest {
+	public static void main(String[] args) {
+		System.out.println();
+		System.out.print("이태희");
+		System.out.println(27);
+	}
+}

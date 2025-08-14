@@ -1,0 +1,16 @@
+package variableTest;
+
+public class VariableTask01 {
+	public static void main(String[] args) {
+		int num1 = 0;
+		boolean trueOrFalse = false;
+		double num2 = 0;
+		char letter = ' ';
+		float num3 = 0.0F;
+		String language = " ";
+		Long num4 = 0L;
+		
+		
+		
+	}
+}

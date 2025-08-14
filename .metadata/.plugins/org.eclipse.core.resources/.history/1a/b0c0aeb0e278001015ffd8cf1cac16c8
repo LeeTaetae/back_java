@@ -1,0 +1,25 @@
+package variableTest;
+
+import java.util.Arrays;
+
+public class VariableTask01 {
+	public static void main(String[] args) {
+		int num1 = 0, num2 = 0;
+		boolean no = false, yes = true;
+		int num1 =5, num12 = 98590; 
+		double num2 = 7845.15;
+		char word1 = 'B', word2 = 'S' , word3 = 'D';
+		float num3 = 85.10F;
+		String lang = "자바" , letter = "공백문자";
+		Long num4 = 107L;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

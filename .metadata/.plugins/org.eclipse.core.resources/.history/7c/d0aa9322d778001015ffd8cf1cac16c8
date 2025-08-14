@@ -1,0 +1,9 @@
+package consoleTest;
+
+//저의 이름은 OOO이고 , 
+// 나이는 OO살 입니다.
+public class ConsoleTask {
+	public static void main(String[] args) {
+		
+	}
+}
