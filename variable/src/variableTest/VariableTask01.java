@@ -4,7 +4,7 @@ package variableTest;
 public class VariableTask01 {
 	public static void main(String[] args) {
 		int num1 = 0, num2 = 0;
-		boolean no = false, yes = true;
+		boolean no = false, isTrue = false;
 		double num3 = 0.0;
 		char word1 = ' ', word2 = ' ', word3 = ' ';
 		float num4 = 0.0F;
