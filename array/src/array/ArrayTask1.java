@@ -91,7 +91,11 @@ public class ArrayTask1 {
 		
 		System.out.println(message2);
 		length = sc.nextInt();
+		arr7 = new int[length];
 		
+		for(int i =0; i < arr7.length; i++) {
+				
+		}
 		
 		
 	}

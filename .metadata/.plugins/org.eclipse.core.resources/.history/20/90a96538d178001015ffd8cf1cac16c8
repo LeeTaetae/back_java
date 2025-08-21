@@ -1,8 +1,0 @@
-package consoleTest;
-
-public class ConsoleTest {
-	public static void main(String[] args) {
-		String name = "이태희";
-		System.out.println(name);
-	}
-}

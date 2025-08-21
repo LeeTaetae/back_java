@@ -1,7 +1,0 @@
-package consoleTest;
-
-public class ConsoleTask {
-	public static void main(String[] args) {
-		
-	}
-}
