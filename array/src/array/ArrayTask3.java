@@ -11,13 +11,16 @@ public class ArrayTask3 {
 //			4) 3을 더하기
 		
 		int[] arr1 = new int[20];
-		for(int i = 1; i <= arr1.length; i++) {
+		for(int i = 1; i <= 20; i++) {
 			if(i % 2 == 0) {				
-				System.out.println( i + 3);
-			}
-			
+				arr1[i] = i;
+				i++;
+			}			
 		}
-		
+		for(int i = 0; i < arr1.length; i++) {
+			arr1[i] += 3;
+			System.out.println(arr1);
+		}		
 		System.out.println("===================================");
 		
 //		2. 초기값으로 10, 20, 30, 40, 50 값을 넣고 평균을 출력하기
@@ -45,8 +48,9 @@ public class ArrayTask3 {
 		for(int i = 1; i <= arr2.length; i++) {
 	
 //			System.out.println(i);
-			if(i > 5) {
-				System.out.println(i * 2);
+			if(arr2[i] > 5) {
+				arr2[i	] *= 2;
+				System.out.println(arr2[i]);
 			}
 		}
 		
@@ -57,11 +61,12 @@ public class ArrayTask3 {
 //			3) 마지막은 *이 붙지 않음 
 		int[] arr3 = new int[10];
 		for(int i = 0; i < arr3.length; i++) {
-			String str1 = String.valueOf(i + 1);
-			if(i+1 == 10) {
-				System.out.print(str1);
+			arr3[i] = i;
+			
+			if(i == arr3.length - 1) {
+				System.out.print(arr3[i]);
 			}else {
-				System.out.print(str1 + "*");
+				System.out.print(arr3[i] + "*");
 			
 			}
 		
@@ -75,10 +80,11 @@ public class ArrayTask3 {
 //			4) 더한 값만 출력하기
 		int[] arr4 = new int[10];
 		for(int i = 1; i <= arr4.length; i++) {
+			arr4[i] = i + 1;
 
-			if(i % 3 == 0) {
+			if(arr4[i]	 % 3 == 0) {
 //				System.out.println(i);
-				count += i;
+				count += arr4[i];
 			}
 		}
 		System.out.println("3의 배수 합 : " + count);	
