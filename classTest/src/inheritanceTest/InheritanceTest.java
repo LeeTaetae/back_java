@@ -1,0 +1,65 @@
+package inheritanceTest;
+
+//  부모 클래스
+class A {
+	String name;
+	int data;
+	
+	public A() {
+		System.out.println(this);
+		System.out.println("부모 생성자 호출");
+		this.name = "A";
+		this.data = 10;
+	}
+	
+	void printName() {
+		System.out.println(name);
+	}
+	
+	void walk() {
+		System.out.println("네 발로 걷기");
+	}
+}
+
+//  자식 클래스
+class B extends A{
+	
+	public B() {
+		super();
+		System.out.println(this);
+		System.out.println("자식 생성자 호출됨");
+	}
+	
+	void printData() {
+		System.out.println(data);
+	}
+	
+	// 오버 라이딩
+	@Override
+	public void walk() {
+		System.out.println("세 발로 걷기");
+	}
+}
+
+class C extends A {
+	public C() {
+		super();
+
+	}
+	
+	@Override
+	public void walk() {
+		System.out.println("두 발로 걷기");
+	}
+}
+public class InheritanceTest {
+	
+	public static void main(String[] args) {
+		A a = new A();
+		a.walk();
+		B b = new B();
+		C c = new C();
+		c.walk();
+		b.walk();
+	}
+}
