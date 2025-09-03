@@ -22,5 +22,24 @@
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="exceptionTask.ExoertException"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="javax.naming.AuthenticationException"/>
+    <fullyQualifiedTypeName name="java.net.PasswordAuthentication"/>
+    <fullyQualifiedTypeName name="javax.mail.Session"/>
+    <fullyQualifiedTypeName name="javax.mail.Message"/>
+    <fullyQualifiedTypeName name="javax.mail.internet.MimeMessage"/>
+    <fullyQualifiedTypeName name="javax.mail.internet.InternetAddress"/>
+    <fullyQualifiedTypeName name="javax.mail.Multipart"/>
+    <fullyQualifiedTypeName name="javax.mail.internet.MimeMultipart"/>
+    <fullyQualifiedTypeName name="javax.mail.internet.MimeBodyPart"/>
+    <fullyQualifiedTypeName name="javax.mail.Transport"/>
+    <fullyQualifiedTypeName name="java.net.Authenticator"/>
+    <fullyQualifiedTypeName name="javax.mail.internet.MimeMessage.RecipientType"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="javax.mail.Authenticator"/>
+    <fullyQualifiedTypeName name="javax.mail.PasswordAuthentication"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
 </qualifiedTypeNameHistroy>

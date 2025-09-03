@@ -17,13 +17,15 @@ package ex03;
 public class Programmer extends Person {
 //- 필드: 노트북(notebook) - 논리형, 언어들(languages) - 문자열 5칸 짜리 배열
    private boolean notebook;
-   private String[] lanugages;
+   private String[] languages = new String[5];
+   private int langCount = 0;
+   
    
    public Programmer(String name, int age, String job, String hobby,
          boolean notebook, String[] lanugages) {
       super(name, age, job, hobby);
       this.notebook = notebook;
-      this.lanugages = lanugages;
+      this.languages = lanugages;
    }
 
    public boolean isNotebook() {
@@ -35,11 +37,11 @@ public class Programmer extends Person {
    }
 
    public String[] getLanugages() {
-      return lanugages;
+      return languages;
    }
 
    public void setLanugages(String[] lanugages) {
-      this.lanugages = lanugages;
+      this.languages = lanugages;
    }
    
 
