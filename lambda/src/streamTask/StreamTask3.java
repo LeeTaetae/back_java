@@ -18,7 +18,7 @@ public class StreamTask3 {
 				.map((n) -> n * 10) //IntStream
 				.mapToObj(Integer::valueOf) //Stream<Integer>
 				.collect(Collectors.toCollection(ArrayList::new));//List<Integer>
-			
+		
 		
 		datas1.stream().mapToInt(Integer::intValue).forEach(System.out::println);
 		

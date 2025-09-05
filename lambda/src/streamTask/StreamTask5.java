@@ -3,7 +3,10 @@ package streamTask;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.function.Supplier;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class StreamTask5 {
 	public static void main(String[] args) {
@@ -24,10 +27,20 @@ public class StreamTask5 {
 		members.addAll(Arrays.asList(memberArray));
 		
 		
-		String[] memmem = members.stream().filter((n) -> n.getHobby().split("_").length == 2).map((member) -> member.getHobby()).collect(Collectors.joining("_")).split("_");
+		String[] memmem = 
+				members
+				.stream()
+				.filter((n) -> n.getHobby().split("_").length == 2)
+				.map((member) -> member.getHobby())
+				.collect(Collectors.joining("_")).split("_");
 		
 		ArrayList<String> hobbiesList = new ArrayList<String>(Arrays.asList(memmem));
 		System.out.println(hobbiesList);
 		System.out.println(hobbiesList.size());
+		
+		ArrayList<Integer> data = new ArrayList<Integer>();
+		
+		data = IntStream.rangeClosed(1, 100).filter((n) -> n % 2 == 1).map((n) -> n ).mapToObj(Integer::valueOf).collect(Collectors.toCollection(ArrayList::new));
+		System.out.println(data);
 	}
 }

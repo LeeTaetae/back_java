@@ -53,7 +53,6 @@ public class StreamTask1 {
 //	  numbers.stream().map((n) -> String.format("%04d", n)).map((n) -> n.replace("0", "공").replace("7" , "칠").replace("2", "이").replace("3", "삼")).forEach(System.out::println);
 	  String input2 = "0723";
 	  input2.chars().map((c)-> c-48).map(hangle::charAt).forEach((c) -> {System.out.println((char)c);});
-	   
 	  
 	  
 	   
