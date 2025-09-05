@@ -1,36 +1,28 @@
 package streamTest;
 
 import java.util.ArrayList;
-import java.util.stream.IntStream;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class StreamTest {
 	public static void main(String[] args) {
-		ArrayList<Integer> datas = new ArrayList<Integer>();
-//		IntStream() : 정수형 문법을 이용
-//		.range(시작, 끝) : 마지막을 포함하지 않음
-//		.rangeClosed(시작, 끝) : 마지막을 포함함
-		IntStream.range(0, 10).forEach((n) -> {datas.add(n);});
-		
-//		System.out.println(datas);
+//		.sorted() : 정렬
+		ArrayList<Integer> numbers1 = new ArrayList<Integer>(Arrays.asList(1, 10, 6, 4, 8));
+//		numbers.stream().sorted().forEach(System.out::println);
+		numbers1.stream().sorted(Collections.reverseOrder()).forEach(System.out::println);
 		
 		
-//		참조형 문법
-//		.(소속::메서드명)
-//		IntStream.range(1, 6).forEach(System.out::println);
+//		.collect() : 결과를 다양한 타입으로 리턴
+		ArrayList<Integer> numbers2 = new ArrayList<Integer>(Arrays.asList(1, 10, 6, 4, 8));
+		List<Integer> newList = numbers2.stream().map((n) -> n * 10).collect((Collectors.toCollection(ArrayList::new)));
 		
-//		datas.stream().forEach((n) -> {
-//			if(n % 2 == 0) {
-//				System.out.println(n);
-//			}
-//		});
+//		문자열로 결과 타입을 변경
+		String newString = numbers2.stream().map((n) -> n * 10).map(String::valueOf).collect((Collectors.joining(",")));
 		
-//		datas.stream().filter((n) -> (n % 2 == 1)).forEach(System.out::println);
+		System.out.println(newString);
+		System.out.println(newList);
 		
-//		.stream() : 컬렉션을 Stream 객체로 변경
-//		.chars() : 문자열을 Stream 객체로 변경
-		"ABCD".chars().forEach((c) -> {
-			System.out.println((char)c);
-		});
-	
 	}
 }
