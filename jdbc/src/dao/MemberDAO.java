@@ -306,7 +306,7 @@ public class MemberDAO {
 			check = false;
 			System.out.println("회원탈퇴 쿼리 오류 발생");
 			e.printStackTrace();
-		}finally {
+		}finally {	x
 			this.closeResources();
 		}
 		

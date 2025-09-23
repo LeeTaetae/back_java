@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
     <libraryInfo home="D:\back_0900_lth\java\resource\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre" version="21.0.3"/>
+    <libraryInfo home="C:\Java\jdk-17" version="17.0.10"/>
     <libraryInfo home="C:\Java\jdk-17\bin" version="17.0.10">
         <bootpath>
             <entry path="null"/>
