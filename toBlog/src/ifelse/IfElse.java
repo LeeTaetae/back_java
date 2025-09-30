@@ -34,7 +34,6 @@ public class IfElse {
 			break;
 		default : 
 			System.out.println("여우누이는 집으로 갔어요🏠");
-		
 		}
 	}
 }
